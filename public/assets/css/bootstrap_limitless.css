@@ -112,6 +112,32 @@
 body {
   position: relative; }
 
+  .goog-logo-link {
+    display:none !important;
+} 
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+.goog-te-banner-frame.skiptranslate{
+display: none !important;
+} 
+
+.goog-te-banner-frame.skiptranslate {display: none !important;}
+
+iframe#\:1\.container {
+    display: none!important;
+    visibility: hidden!important;
+}
+
+div.skiptranslate.goog-te-gadget{
+    font-size: 0;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+  display: none;
+}
+
 dt {
   margin-bottom: 0.3125rem; }
 
