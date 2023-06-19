@@ -13,12 +13,12 @@ class LgasTableSeeder extends Seeder
     {
         DB::table('lgas')->delete();
 
-        $state_id = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+        $state_id = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
         ];
 
-        $lgas = ["Riga", "Jūrmala", "Ogre", "Salaspils", "Saulkrasti", "Ķekava", "Garkalne", "Olaine", "Carnikava", "Mārupe", "Valmiera", "Cēsis", "Sigulda", "Limbaži", "Alūksne", "Aizkraukle", "Madona", "Smiltene", "Gulbene", "Valka", "Līvāni", "Balvi", "Preiļi", "Rūjiena", "Kocēni", "Ape", "Jelgava", "Jēkabpils", "Bauska", "Dobele", "Iecava", "Ozolnieki", "Aizkraukle", "Vecumnieki", "Jaunjelgava", "Lielvārde", "Pļaviņas", "Līvāni", "Salaspils", 
-        "Liepāja", "Ventspils", "Kuldīga", "Saldus", "Talsi", "Kandava", "Grobiņa", "Aizpute", "Brocēni", "Pāvilosta", "Skrunda", "Roja", "Auce", "Durbe", "Alsunga", "Priekule", "Vaiņode"
-        ];
+        $lgas = ["Riga", "Jūrmala", "Ogre", "Salaspils", "Saulkrasti", "Ķekava", "Garkalne", "Olaine", "Carnikava", "Mārupe", "Tallinn", 
+        "Tartu", "Narva", "Pärnu", "Kohtla-Järve", "Viljandi", "Rakvere", "Maardu", "Kuressaare", "Sillamäe", "Vilnius", "Kaunas", 
+        "Klaipėda", "Šiauliai", "Panevėžys", "Alytus", "Marijampolė", "Mažeikiai", "Jonava", "Utena" ];
 
         for($i=0; $i<count($lgas); $i++){
             Lga::create(['state_id' => $state_id[$i], 'name' => $lgas[$i]]);
