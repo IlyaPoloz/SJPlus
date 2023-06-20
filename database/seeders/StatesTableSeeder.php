@@ -13,7 +13,7 @@ class StatesTableSeeder extends Seeder
         DB::table('states')->delete();
 
         $states = [
-            'Latvia, Estonia, Lithuania'
+            'Latvia', 'Estonia', 'Lithuania'
         ];
 
         foreach ($states as $state) {

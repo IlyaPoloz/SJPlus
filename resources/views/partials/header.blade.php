@@ -1,19 +1,11 @@
 <div id="page-header" class="page-header page-header-light">
     <div class="page-header-content header-elements-md-inline">
+        
         <div class="page-title d-flex">
             <h4><i class="icon-plus-circle2 mr-2"></i> <span class="font-weight-semibold">@yield('page_title')</span></h4>
             <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
         </div>
 
-        <div id="google_translate_element">
-            <script type="text/javascript">
-            function googleTranslateElementInit() {
-            new google.translate.TranslateElement({includedLanguages: 'en,lv,'}, 'google_translate_element');
-            }
-            </script>
-
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </div>
 
         <div class="header-elements d-none">
             <div class="d-flex justify-content-center">
@@ -25,6 +17,8 @@
         </div>
     </div>
 
+
+    
     {{--Breadcrumbs--}}
     {{--<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
         <div class="d-flex">
@@ -36,6 +30,8 @@
 
             <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
         </div>
+
+        
 
         <div class="header-elements d-none">
             <div class="breadcrumb justify-content-center">
